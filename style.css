@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+}
+.left-side img{
+    max-width: 100%;
+    width: 80px;
+}
+.right-side a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+}
+.right-side a:hover{
+    color: #017143;
+}
+.contianer{
+    position: relative;
+    max-width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left-side,.right-side{
+    max-width: 40%;
+}
+.left-side h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+.left-side span{
+    color: #017143;
+    font-weight: bold;
+}
+.left-side p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+.left-side a{
+    display: inline-block;
+    background: green;
+    padding: 12px 18px 12px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    color: white;
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.left-side a:hover{
+    color: #fff;
+}
+.right-side{
+    display: flex;
+}
+.contianer .right-side{
+    text-align: center;
+    margin-top: 60px;
+}
+.contianer .right-side img{
+    max-width: 100%;
+}
+.img1,.img2,.img3{
+    width: 330px;
+    display: none;
+}
+.img1.show,.img2.show,.img3.show{
+    display: block;
+}
+.social-media{
+    position: absolute;
+    display: grid;
+    right: -10%;
+    bottom: 50%;
+}
+.social-media img{
+    cursor: pointer;
+    width: 25px;
+    margin: 10px;
+}
+.social-media img.facebook{
+    width: 18.5px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+}
+.slider img{
+    cursor: pointer;
+    width: 54px;
+    margin: 20px;
+}
+.slider a:hover{
+    margin-top: -15px;
+    transition: 0.2s;
+}
+@media (max-width:912px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+    }
+    .contianer{
+        flex-direction: column;
+    }
+    .right-side a {
+    margin: 10px;
+    font-size: 14px;
+}
+.left-side{
+    text-align: center;
+    max-width: 100%;
+    width:100%
+}
+.left-side h1{
+    font-size: 40px;
+}
+.left-side p{
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.right-side {
+    justify-content: center;
+    max-width: 100%;
+}
+.social-media {
+    right: -10%;
+    bottom: 0;
+}
+}
